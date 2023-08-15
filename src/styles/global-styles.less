@@ -1,0 +1,22 @@
+.global-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media @break-tablet{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media @break-desktop{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

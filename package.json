@@ -1,0 +1,18 @@
+{
+  "name": "wb-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "less": "^4.2.0",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "swiper": "^10.1.0"
+  }
+}

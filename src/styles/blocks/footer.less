@@ -1,0 +1,78 @@
+.footer {
+  margin-top: auto;
+  background-color: @purple;
+  padding-top: 12px;
+  color: #fff;
+
+  @media @break-tablet {
+    padding-top: 24px;
+  }
+
+  &__wrapper {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @media @break-tablet {
+      padding-top: 44px;
+      padding-bottom: 44px;
+    }
+
+    @media @break-desktop {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+    }
+  }
+
+  &__text {
+    max-width: 400px;
+    text-align: center;
+
+    @media @break-desktop {
+      max-width: 580px;
+      text-align: left;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @media @break-tablet {
+      flex-direction: row;
+    }
+    @media @break-desktop {
+      flex-direction: column;
+    }
+    @media @break-1366 {
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+
+  &__button {
+    display: block;
+    border-radius: 8px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: #000;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    img {
+      display: block;
+    }
+  }
+}
